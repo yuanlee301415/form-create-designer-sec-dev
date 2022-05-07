@@ -1,6 +1,6 @@
 {
-  "name": "vue-template",
-  "version": "0.3.0",
+  "name": "form-create-designer-sec-dev",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
