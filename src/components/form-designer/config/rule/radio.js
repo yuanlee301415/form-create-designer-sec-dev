@@ -1,3 +1,7 @@
+/*
+* 组件》单选框 - 配置数据
+* */
+
 import uniqueId from '@form-create/utils/lib/unique';
 import {makeOptionsRule, makeRequiredRule} from '../../utils/index';
 
@@ -28,15 +32,17 @@ export default {
         return [
             makeRequiredRule(),
             makeOptionsRule('options'),
-            {type: 'switch', field: 'disabled', title: '是否禁用'}, {
+            {type: 'switch', field: 'disabled', title: '是否禁用'},
+            {
                 type: 'switch',
                 field: 'type',
                 title: '按钮形式',
                 props: {activeValue: 'button', inactiveValue: 'default'}
-            }, {type: 'input', field: 'textColor', title: '按钮形式的 Radio 激活时的文本颜色'}, {
-                type: 'input',
-                field: 'fill',
-                title: '按钮形式的 Radio 激活时的填充色和边框色'
-            }];
+            },
+
+            {type: 'input', field: 'textColor', title: '按钮形式的 Radio 激活时的文本颜色'},
+
+            {type: 'input', field: 'fill', title: '按钮形式的 Radio 激活时的填充色和边框色'}
+        ];
     }
 };

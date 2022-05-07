@@ -1,3 +1,7 @@
+/*
+* 组件》富文本框 - 配置数据
+* */
+
 import uniqueId from '@form-create/utils/lib/unique';
 import {makeRequiredRule} from '../../utils';
 

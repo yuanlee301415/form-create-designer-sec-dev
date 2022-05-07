@@ -1,3 +1,7 @@
+/*
+* 组件》文字 - 配置数据
+* */
+
 const label = '文字';
 const name = 'span';
 

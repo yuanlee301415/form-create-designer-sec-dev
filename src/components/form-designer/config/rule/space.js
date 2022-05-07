@@ -1,3 +1,7 @@
+/*
+* 组件》间距 - 配置数据
+* */
+
 const label = '间距';
 const name = 'div';
 

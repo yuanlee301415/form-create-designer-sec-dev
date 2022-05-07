@@ -1,3 +1,7 @@
+/*
+* 组件》颜色选择器 - 配置数据
+* */
+
 import uniqueId from '@form-create/utils/lib/unique';
 import {makeRequiredRule} from '../../utils';
 
@@ -19,18 +23,20 @@ export default {
     },
     props() {
         return [
-            makeRequiredRule(), {type: 'switch', field: 'disabled', title: '是否禁用'}, {
-                type: 'switch',
-                field: 'showAlpha',
-                title: '是否支持透明度选择'
-            }, {
+            makeRequiredRule(),
+            {type: 'switch', field: 'disabled', title: '是否禁用'},
+            {type: 'switch', field: 'showAlpha', title: '是否支持透明度选择'},
+            {
                 type: 'select',
                 field: 'colorFormat',
                 title: '颜色的格式',
-                options: [{label: 'hsl', value: 'hsl'}, {label: 'hsv', value: 'hsv'}, {
-                    label: 'hex',
-                    value: 'hex'
-                }, {label: 'rgb', value: 'rgb'}]
-            }];
+                options: [
+                    {label: 'hsl', value: 'hsl'},
+                    {label: 'hsv', value: 'hsv'},
+                    {label: 'hex', value: 'hex'},
+                    {label: 'rgb', value: 'rgb'}
+                ]
+            }
+        ];
     }
 };

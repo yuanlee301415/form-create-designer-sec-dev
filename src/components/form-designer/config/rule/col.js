@@ -1,3 +1,7 @@
+/*
+* 组件》列 - 配置数据
+* */
+
 const name = 'col';
 
 export default {
