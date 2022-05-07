@@ -51,5 +51,3 @@ FcDesigner.makeOptionsRule = makeOptionsRule;
 export default FcDesigner;
 
 export {formCreate, designerForm};
-
-console.log(FcDesigner)
