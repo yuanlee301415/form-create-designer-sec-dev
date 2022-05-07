@@ -1,3 +1,7 @@
+<!--
+表单设计区域的控件拖拽接收区域
+-->
+
 <template>
   <div class="drag-tool" @click.stop="active" :class="{active: state.active === id}">
     <div class="drag-mask" v-if="mask"></div>
@@ -39,6 +43,7 @@ export default {
     methods: {
         active() {
             if (this.state.active === this.id) return;
+
             this.state.active = this.id;
             this.$emit('active');
         }
