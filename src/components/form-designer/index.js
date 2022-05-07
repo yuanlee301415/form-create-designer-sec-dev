@@ -7,11 +7,11 @@ import DragBox from './components/DragBox.vue';
 import Required from './components/Required.vue';
 import TableOptions from './components/TableOptions.vue';
 import {designerForm} from './utils/form';
-import './style/index.css';
 import draggable from 'vuedraggable';
 import unique from '@form-create/utils/lib/unique';
 import {makeOptionsRule} from './utils/index';
 import formCreate from './utils/form';
+import './style/index.css';
 
 designerForm.component('draggable', draggable);
 designerForm.component('DragTool', DragTool);
