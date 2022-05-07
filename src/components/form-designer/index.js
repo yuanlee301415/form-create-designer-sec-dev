@@ -7,7 +7,6 @@ import DragBox from './components/DragBox.vue';
 import Required from './components/Required.vue';
 import TableOptions from './components/TableOptions.vue';
 import {designerForm} from './utils/form';
-import FcEditor from '@form-create/component-wangeditor';
 import './style/index.css';
 import draggable from 'vuedraggable';
 import unique from '@form-create/utils/lib/unique';
@@ -22,8 +21,6 @@ designerForm.component('Struct', Struct);
 designerForm.component('Fetch', Fetch);
 designerForm.component('Required', Required);
 designerForm.component('TableOptions', TableOptions);
-designerForm.component('FcEditor', FcEditor);
-formCreate.component('FcEditor', FcEditor);
 
 designerForm.register('_fc', {
     init(fc, rule) {
