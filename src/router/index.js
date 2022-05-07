@@ -19,6 +19,21 @@ export const routes = [
         component: () => import('@/views/home')
       }
     ]
+  },
+
+  { // Designer
+    path: '/designer',
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'Designer',
+        meta: {
+          title: 'Designer'
+        },
+        component: () => import('@/views/designer')
+      }
+    ]
   }
 ]
 
