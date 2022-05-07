@@ -3,6 +3,7 @@
     <fc-designer ref="designer">
       <template slot="handle">
         <ElButton @click="getRule">GetRule</ElButton>
+        <ElButton @click="setRule">SetRule</ElButton>
         <ElButton @click="getJson">GetJson</ElButton>
         <ElButton @click="getOption">GetOption</ElButton>
       </template>
@@ -12,9 +13,10 @@
 
 <script>
 import FcDesigner  from '@/components/form-designer'
+import rulesRes from './rulesRes.json'
 
 export default {
-  name: 'GetData',
+  name: 'FormDesigner',
   components: {
     FcDesigner
   },
@@ -30,6 +32,13 @@ export default {
     getRule() {
       const rule = this.$refs.designer.getRule()
       console.log('rule:', rule)
+    },
+
+    /**
+     * 设置表单规则对象
+     */
+    setRule() {
+      this.$refs.designer.setRule(rulesRes)
     },
 
     /**
