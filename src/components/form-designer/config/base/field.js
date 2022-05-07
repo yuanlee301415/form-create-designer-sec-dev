@@ -1,3 +1,7 @@
+/*
+* 组件配置》基础配置 - 配置数据
+* */
+
 export default function field() {
     return [
         {

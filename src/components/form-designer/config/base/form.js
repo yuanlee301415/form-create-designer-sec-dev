@@ -1,3 +1,7 @@
+/*
+* 表单配置 - 配置数据
+* */
+
 export default function form() {
     return [
         {
