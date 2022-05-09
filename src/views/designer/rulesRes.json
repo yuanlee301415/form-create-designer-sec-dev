@@ -135,5 +135,27 @@
     "_fc_drag_tag": "row",
     "hidden": false,
     "display": true
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "poops": {
+          "span": 24
+        },
+        "children": [
+          {
+            "type": "test-component",
+            "field": "f4c5utknipjr",
+            "title": "TestComponent",
+            "info": "",
+            "_fc_drag_tag": "test-component",
+            "hidden": false,
+            "display": true
+          }
+        ]
+      }
+    ]
   }
 ]

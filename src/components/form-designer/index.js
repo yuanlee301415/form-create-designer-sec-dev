@@ -15,6 +15,9 @@ import {makeOptionsRule} from './utils/index';
 import formCreate from './utils/form';
 import './style/index.css';
 
+import TestComponent from './components/custom/Test'
+console.log('TestComponent:', TestComponent)
+
 designerForm.component('draggable', draggable);
 designerForm.component('DragTool', DragTool);
 designerForm.component('DragBox', DragBox);
@@ -25,6 +28,9 @@ designerForm.component('Required', Required);
 designerForm.component('TableOptions', TableOptions);
 designerForm.component('FcEditor', FcEditor);
 formCreate.component('FcEditor', FcEditor);
+
+designerForm.component('TestComponent', TestComponent)
+formCreate.component('TestComponent', TestComponent)
 
 designerForm.register('_fc', {
     init(fc, rule) {
