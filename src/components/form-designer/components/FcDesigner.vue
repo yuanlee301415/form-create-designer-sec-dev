@@ -639,6 +639,7 @@ export default {
           info: rule.info,
           dataDefaultValue: rule.dataDefaultValue,
           unit: rule.unit,
+          uniqueKey: rule.uniqueKey,
           _control: rule._control,
         };
 

@@ -31,12 +31,20 @@ export default function field() {
                 disabled: true
             }
         },
-
         {
             type: 'input',
             field: 'unit',
             value: '',
             title: '单位',
+            props: {
+                disabled: true
+            }
+        },
+        {
+            type: 'switch',
+            field: 'uniqueKey',
+            value: '',
+            title: '是否主键',
             props: {
                 disabled: true
             }

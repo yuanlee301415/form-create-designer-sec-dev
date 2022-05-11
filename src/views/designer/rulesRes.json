@@ -193,6 +193,7 @@
             "title": "整型输入框",
             "info": "",
             "unit": "Kg",
+            "uniqueKey": true,
             "_fc_drag_tag": "fc-integer",
             "hidden": false,
             "display": true
