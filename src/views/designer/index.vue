@@ -1,6 +1,6 @@
 <template>
   <div>
-    <fc-designer ref="designer">
+    <fc-designer ref="designer" height="calc(100vh - 40px)">
       <template slot="handle">
         <ElButton @click="getRule">GetRule</ElButton>
         <ElButton @click="setRule">SetRule</ElButton>
@@ -13,7 +13,7 @@
 
 <script>
 import FcDesigner  from '@/components/form-designer'
-import rulesRes from './rulesRes.json'
+import formRules from './formRules.json'
 
 export default {
   name: 'FormDesigner',
@@ -38,7 +38,7 @@ export default {
      * 设置表单规则对象
      */
     setRule() {
-      this.$refs.designer.setRule(rulesRes)
+      this.$refs.designer.setRule(formRules)
     },
 
     /**
