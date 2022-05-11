@@ -192,6 +192,7 @@
         },
         "children": [
           {
+            "$required": true,
             "dataDefaultValue": "123",
             "type": "fc-integer",
             "field": "ts65uua3lrs7",
@@ -215,6 +216,7 @@
         },
         "children": [
           {
+            "$required": true,
             "dataDefaultValue": "1.23",
             "type": "fc-float",
             "field": "zns1mkfgsuoiz",
@@ -229,6 +231,38 @@
             "hidden": false,
             "display": true
           }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "$required": true,
+            "type": "select",
+            "field": "xj11mkfl0l47i",
+            "title": "选择器",
+            "info": "",
+            "unit": "",
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true,
+            "props": {
+              "enumTypeCode": "relation_type_1123"
+            },
+            "_fc_drag_tag": "select",
+            "hidden": false,
+            "display": true
+          }
+
         ]
       }
     ]

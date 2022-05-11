@@ -629,6 +629,7 @@ export default {
           index: rule.index,
           required: rule.required,
           trackChange: rule.trackChange,
+          enumTypeCode: rule.enumTypeCode,
           _control: rule._control,
         };
 
