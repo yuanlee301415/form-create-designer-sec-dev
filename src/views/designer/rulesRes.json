@@ -187,6 +187,7 @@
         },
         "children": [
           {
+            "dataDefaultValue": "123",
             "type": "fc-integer",
             "field": "ts65uua3lrs7",
             "title": "整型输入框",

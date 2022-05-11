@@ -12,7 +12,8 @@ export default function field() {
             props: {
                 disabled: true
             }
-        }, {
+        },
+        {
             type: 'input',
             field: 'title',
             value: '',
@@ -20,7 +21,18 @@ export default function field() {
             props: {
                 disabled: true
             }
-        }, {
+        },
+        {
+            type: 'input',
+            field: 'dataDefaultValue',
+            value: '',
+            title: '默认值',
+            props: {
+                disabled: true
+            }
+        },
+
+        {
             type: 'input',
             field: 'unit',
             value: '',

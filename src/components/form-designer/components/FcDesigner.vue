@@ -637,6 +637,7 @@ export default {
           field: rule.field,
           title: rule.title || '',
           info: rule.info,
+          dataDefaultValue: rule.dataDefaultValue,
           unit: rule.unit,
           _control: rule._control,
         };
