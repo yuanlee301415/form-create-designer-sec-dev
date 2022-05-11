@@ -14,6 +14,7 @@ import TestComponent from './components/custom/Test'
 import Unsupported from './components/custom/Unsupported';
 import Integer from './components/custom/Integer';
 import Textarea from './components/custom/Textarea';
+import Float from './components/custom/Float';
 
 import {designerForm} from './utils/form';
 import {makeOptionsRule} from './utils/index';
@@ -42,6 +43,9 @@ formCreate.component('FcInteger', Integer)
 
 designerForm.component('FcTextarea', Textarea)
 formCreate.component('FcTextarea', Textarea)
+
+designerForm.component('FcFloat', Float)
+formCreate.component('FcFloat', Float)
 
 designerForm.register('_fc', {
     init(fc, rule) {

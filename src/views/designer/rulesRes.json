@@ -207,6 +207,29 @@
             "display": true
           }
         ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "dataDefaultValue": "1.23",
+            "type": "fc-float",
+            "field": "zns1mkfgsuoiz",
+            "title": "浮点型输入框",
+            "info": "",
+            "unit": "Kg",
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true,
+            "_fc_drag_tag": "fc-float",
+            "hidden": false,
+            "display": true
+          }
+        ]
       }
     ]
   },

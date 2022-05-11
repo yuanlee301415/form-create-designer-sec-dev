@@ -24,6 +24,7 @@ import test from './rule/test';
 import unsupported from './rule/unsupported';
 import integer from './rule/integer';
 import textarea from './rule/textarea';
+import float from './rule/float';
 
 export default function createMenu() {
     return [
@@ -35,6 +36,7 @@ export default function createMenu() {
                 unsupported,
                 integer,
                 textarea,
+                float,
                 input, number, radio, checkbox, select, _switch, time, date, slider, rate, color, cascader, upload, transfer, tree, editor
             ]
         },
