@@ -594,7 +594,7 @@ export default {
       });
     },
     toolActive(rule) {
-      console.log('toolActive>rule:', rule)
+      console.log('toolActive>arg>rule:', rule)
       if (this.activeRule) {
         delete this.propsForm.api[this.activeRule._id];
         delete this.baseForm.api[this.activeRule._id];
@@ -616,6 +616,7 @@ export default {
       }
 
       this.propsForm.rule = this.cacheProps[rule._id];
+      console.log('toolActive>this.propsForm.rule:', this.propsForm.rule)
 
       const formData = {...rule.props, formCreateChild: rule.children[0]};
       Object.keys(rule).forEach(k => {
@@ -636,11 +637,13 @@ export default {
           field: rule.field,
           title: rule.title || '',
           info: rule.info,
+          unit: rule.unit,
           _control: rule._control,
         };
 
         this.validateForm.options.formData = {validate: rule.validate ? [...rule.validate] : []};
       }
+      console.log('toolActive>this.propsForm.options:', this.propsForm.options)
 
       console.log('toolActive>baseForm:', this.baseForm)
       console.log('toolActive>propsForm:', this.propsForm)

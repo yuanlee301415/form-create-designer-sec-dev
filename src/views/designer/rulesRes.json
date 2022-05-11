@@ -176,5 +176,28 @@
       }
 
     ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "fc-integer",
+            "field": "ts65uua3lrs7",
+            "title": "整型输入框",
+            "info": "",
+            "unit": "Kg",
+            "_fc_drag_tag": "fc-integer",
+            "hidden": false,
+            "display": true
+          }
+        ]
+      }
+    ]
   }
 ]

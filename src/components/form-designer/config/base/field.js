@@ -20,6 +20,14 @@ export default function field() {
             props: {
                 disabled: true
             }
+        }, {
+            type: 'input',
+            field: 'unit',
+            value: '',
+            title: '单位',
+            props: {
+                disabled: true
+            }
         }
     ];
 }
