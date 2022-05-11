@@ -172,6 +172,7 @@
             "uniqueKey": false,
             "index": false,
             "required": false,
+            "trackChange": false,
             "_fc_drag_tag": "fc-unsupported",
             "hidden": false,
             "display": true
@@ -200,6 +201,7 @@
             "uniqueKey": true,
             "index": true,
             "required": true,
+            "trackChange": true,
             "_fc_drag_tag": "fc-integer",
             "hidden": false,
             "display": true

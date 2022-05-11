@@ -66,6 +66,15 @@ export default function field() {
             props: {
                 disabled: true
             }
+        },
+        {
+            type: 'switch',
+            field: 'trackChange',
+            value: '',
+            title: '是否记录属性值变更',
+            props: {
+                disabled: true
+            }
         }
     ];
 }

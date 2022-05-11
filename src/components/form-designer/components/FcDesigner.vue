@@ -642,6 +642,7 @@ export default {
           uniqueKey: rule.uniqueKey,
           index: rule.index,
           required: rule.required,
+          trackChange: rule.trackChange,
           _control: rule._control,
         };
 
