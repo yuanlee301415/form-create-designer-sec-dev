@@ -11,15 +11,10 @@
           {
             "type": "test-component",
             "field": "f4c5utknipjr",
-            "title": "Test",
-            "info": "",
-            "_fc_drag_tag": "test-component",
-            "hidden": false,
-            "display": true
+            "title": "Test"
           }
         ]
       },
-
       {
         "type": "col",
         "props": {
@@ -30,19 +25,14 @@
             "type": "fc-unsupported",
             "field": "f4c5utknipjr",
             "title": "Unsupported",
-            "info": "",
             "unit": "MB",
             "uniqueKey": false,
             "index": false,
             "required": false,
-            "trackChange": false,
-            "_fc_drag_tag": "fc-unsupported",
-            "hidden": false,
-            "display": true
+            "trackChange": false
           }
         ]
       }
-
     ]
   },
   {
@@ -60,15 +50,11 @@
             "type": "fc-integer",
             "field": "ts65uua3lrs7",
             "title": "整型输入框",
-            "info": "",
             "unit": "Kg",
             "uniqueKey": true,
             "index": true,
             "required": true,
-            "trackChange": true,
-            "_fc_drag_tag": "fc-integer",
-            "hidden": false,
-            "display": true
+            "trackChange": true
           }
         ]
       },
@@ -84,7 +70,6 @@
             "type": "fc-float",
             "field": "zns1mkfgsuoiz",
             "title": "浮点型输入框",
-            "info": "",
             "unit": "Kg",
             "uniqueKey": true,
             "index": true,
@@ -92,10 +77,7 @@
             "trackChange": true,
             "props": {
               "scale": 3
-            },
-            "_fc_drag_tag": "fc-float",
-            "hidden": false,
-            "display": true
+            }
           }
         ]
       }
@@ -123,10 +105,7 @@
             "trackChange": true,
             "props": {
               "enumTypeCode": "relation_type_1123"
-            },
-            "_fc_drag_tag": "select",
-            "hidden": false,
-            "display": true
+            }
           }
         ]
       },
@@ -143,10 +122,42 @@
             "info": "",
             "props": {
               "type": "datetimerange"
-            },
-            "_fc_drag_tag": "datePicker",
-            "hidden": false,
-            "display": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "ip",
+            "title": "IP"
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "bizType",
+            "title": "资源分类",
+            "value": "asset",
+            "props": {
+              "disabled": true
+            }
           }
         ]
       }
@@ -155,9 +166,6 @@
   {
     "type": "fc-textarea",
     "field": "ha65uubr3jgz",
-    "title": "多行输入框",
-    "_fc_drag_tag": "fc-textarea",
-    "hidden": false,
-    "display": true
+    "title": "多行输入框"
   }
 ]
