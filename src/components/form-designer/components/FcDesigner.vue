@@ -80,29 +80,15 @@
             <!------------Tab------------>
             <el-header height="40px" class="_fc-r-tabs">
               <div
-                  v-if="!!activeRule"
                   :class="{active: activeTab==='props'}"
                   class="_fc-r-tab"
                   @click="activeTab='props'"
               >组件配置</div>
-
-              <div
-                  :class="{active: activeTab==='form' && !!activeRule}"
-                  class="_fc-r-tab"
-                  @click="activeTab='form'"
-              >表单配置</div>
             </el-header>
             <!------------Tab End------------>
 
             <!------------表单配置------------>
-            <ElMain v-show="activeTab==='form'">
-              <component
-                  :is="FormCreate"
-                  :rule="form.rule"
-                  :option="form.option"
-                  :value.sync="form.value.form"
-              />
-            </ElMain>
+
             <!------------表单配置 End------------>
 
             <!------------组件配置------------>
