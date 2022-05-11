@@ -111,38 +111,31 @@
                 style="padding: 0 20px;"
                 :key="activeRule ? activeRule._id: ''"
             >
-              <div>
-                <ElDivider v-if="showBaseRule">基础配置</ElDivider>
-                <component
-                    v-model="baseForm.api"
-                    v-show="showBaseRule"
-                    :is="FormCreate"
-                    :rule="baseForm.rule"
-                    :option="baseForm.options"
-                    @change="baseChange"
-                />
 
+              <ElDivider v-if="showBaseRule">基础配置</ElDivider>
+              <component
+                  v-model="baseForm.api"
+                  v-show="showBaseRule"
+                  :is="FormCreate"
+                  :rule="baseForm.rule"
+                  :option="baseForm.options"
+                  @change="baseChange"
+              />
+
+
+              <div v-if="propsForm.rule && propsForm.rule.length">
                 <ElDivider>属性配置</ElDivider>
                 <component
                     v-model="propsForm.api"
                     :is="FormCreate"
                     :rule="propsForm.rule"
                     :option="propsForm.options"
+                    disabled
                     @change="propChange"
                     @removeField="propRemoveField"
                 />
-
-                <ElDivider v-if="showBaseRule">验证规则</ElDivider>
-                <component
-                    v-model="validateForm.api"
-                    v-show="showBaseRule"
-                    :is="FormCreate"
-                    :rule="validateForm.rule"
-                    :option="validateForm.options"
-                    @update:value="validateChange"
-                />
-
               </div>
+
             </ElMain>
             <!------------组件配置 End------------>
 
@@ -601,6 +594,7 @@ export default {
       });
     },
     toolActive(rule) {
+      console.log('toolActive>rule:', rule)
       if (this.activeRule) {
         delete this.propsForm.api[this.activeRule._id];
         delete this.baseForm.api[this.activeRule._id];
@@ -647,6 +641,9 @@ export default {
 
         this.validateForm.options.formData = {validate: rule.validate ? [...rule.validate] : []};
       }
+
+      console.log('toolActive>baseForm:', this.baseForm)
+      console.log('toolActive>propsForm:', this.propsForm)
     },
     dragAdd(children, evt) {
       const newIndex = evt.newIndex;
