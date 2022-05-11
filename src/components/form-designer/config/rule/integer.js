@@ -16,13 +16,24 @@ export default {
             type: name,
             field: uniqueId(),
             title: label,
-            info: '',
             props: {}
         };
     },
     props() {
         return [
-            {type: 'switch', field: 'readonly', title: '是否只读'}
+            {type: 'switch', field: 'readonly', title: '是否只读'},
+
+            {
+                type: 'el-alert',
+                props: {
+                    type: 'warning',
+                    title: '提示',
+                    description: '只支持输入整数',
+                    closable: false,
+                    showIcon: true
+
+                }
+            }
         ];
     }
 };

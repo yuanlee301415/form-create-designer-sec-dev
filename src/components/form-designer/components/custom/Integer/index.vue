@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <el-input v-model="value" type="text" @input="value=value.replace(/\D/g, '')"/>
+    <el-input v-model="value" type="number" @input="value=value.replace(/\D/g, '')"/>
   </div>
 </template>
 
