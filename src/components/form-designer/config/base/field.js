@@ -9,11 +9,17 @@ export default function field() {
             field: 'field',
             value: '',
             title: '字段 ID',
+            props: {
+                disabled: true
+            }
         }, {
             type: 'input',
             field: 'title',
             value: '',
             title: '字段名称',
+            props: {
+                disabled: true
+            }
         }
     ];
 }
