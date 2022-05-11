@@ -227,6 +227,9 @@
             "index": true,
             "required": true,
             "trackChange": true,
+            "props": {
+              "scale": 3
+            },
             "_fc_drag_tag": "fc-float",
             "hidden": false,
             "display": true

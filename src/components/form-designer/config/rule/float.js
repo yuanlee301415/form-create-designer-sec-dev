@@ -22,6 +22,8 @@ export default {
         return [
             {type: 'switch', field: 'readonly', title: '是否只读'},
 
+            {type: 'inputNumber', field: 'scale', title: '精度', props: { min: 0, step: 1, stepStrictly: true }},
+
             {
                 type: 'el-alert',
                 props: {
