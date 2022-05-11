@@ -22,14 +22,13 @@ export default {
                 fetch: ''
             },
             props: {},
-            options: []
+            options: [],
+            dataTypes: ['enum']
         };
     },
     props() {
         return [
             {type: 'switch', field: 'readonly', title: '是否只读'},
-
-            {type: 'input', field: 'enumTypeCode', title: '关联字典', props: { disabled: true }},
 
             {type: 'switch', field: 'multiple', title: '是否多选'},
 

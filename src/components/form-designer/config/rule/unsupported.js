@@ -14,7 +14,8 @@ export default {
         return {
             type: name,
             field: uniqueId(),
-            title: label
+            title: label,
+            dataTypes: ['un']
         };
     },
     props() {

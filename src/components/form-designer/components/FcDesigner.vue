@@ -98,15 +98,16 @@
                 :key="activeRule ? activeRule._id: ''"
             >
 
-              <ElDivider v-if="showBaseRule">基础配置</ElDivider>
-              <component
-                  v-model="baseForm.api"
-                  v-show="showBaseRule"
-                  :is="FormCreate"
-                  :rule="baseForm.rule"
-                  :option="baseForm.options"
-                  @change="baseChange"
-              />
+              <div v-if="showBaseRule">
+                <ElDivider>基础配置</ElDivider>
+                <component
+                    v-model="baseForm.api"
+                    :is="FormCreate"
+                    :rule="baseForm.rule"
+                    :option="baseForm.options"
+                    @change="baseChange"
+                />
+              </div>
 
 
               <div v-if="propsForm.rule && propsForm.rule.length">
@@ -232,7 +233,7 @@ export default {
         }
       },
       baseForm: {
-        rule: field(),
+        rule: null,
         api: {},
         options: {
           form: {
@@ -586,7 +587,9 @@ export default {
         delete this.baseForm.api[this.activeRule._id];
         delete this.validateForm.api[this.activeRule._id];
       }
+
       this.activeRule = rule;
+      this.baseForm.rule = rule.dataTypes ? field().filter(field => field.dataTypes && field.dataTypes.find(dataType => rule.dataTypes.includes(dataType))) : []
 
       this.$nextTick(() => {
         this.activeTab = 'props';
@@ -598,7 +601,7 @@ export default {
       });
 
       if (!this.cacheProps[rule._id]) {
-        this.cacheProps[rule._id] = rule.config.config.props(rule);
+        this.cacheProps[rule._id] = !(rule.dataTypes && rule.dataTypes.includes('un')) && rule.config.config.props(rule);
       }
 
       this.propsForm.rule = this.cacheProps[rule._id];

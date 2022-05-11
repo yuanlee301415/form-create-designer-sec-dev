@@ -5,6 +5,7 @@
 export default function field() {
     return [
         {
+            dataTypes: ['un', 'string', 'number', 'enum', 'datetime'],
             type: 'input',
             field: 'field',
             value: '',
@@ -14,6 +15,7 @@ export default function field() {
             }
         },
         {
+            dataTypes: ['un', 'string', 'number', 'enum', 'datetime'],
             type: 'input',
             field: 'title',
             value: '',
@@ -23,6 +25,7 @@ export default function field() {
             }
         },
         {
+            dataTypes: ['string', 'number', 'enum', 'datetime'],
             type: 'input',
             field: 'dataDefaultValue',
             value: '',
@@ -32,6 +35,7 @@ export default function field() {
             }
         },
         {
+            dataTypes: ['string', 'number', 'enum', 'datetime'],
             type: 'input',
             field: 'unit',
             value: '',
@@ -41,6 +45,7 @@ export default function field() {
             }
         },
         {
+            dataTypes: ['string', 'number', 'enum', 'datetime'],
             type: 'switch',
             field: 'uniqueKey',
             value: '',
@@ -50,6 +55,7 @@ export default function field() {
             }
         },
         {
+            dataTypes: ['string', 'number', 'enum', 'datetime'],
             type: 'switch',
             field: 'index',
             value: '',
@@ -59,6 +65,7 @@ export default function field() {
             }
         },
         {
+            dataTypes: ['string', 'number', 'enum', 'datetime'],
             type: 'switch',
             field: 'required',
             value: '',
@@ -68,10 +75,21 @@ export default function field() {
             }
         },
         {
+            dataTypes: ['string', 'number', 'enum', 'datetime'],
             type: 'switch',
             field: 'trackChange',
             value: '',
             title: '是否记录属性值变更',
+            props: {
+                disabled: true
+            }
+        },
+
+        {
+            dataTypes: ['enum'],
+            type: 'input',
+            field: 'enumTypeCode',
+            title: '关联字典',
             props: {
                 disabled: true
             }

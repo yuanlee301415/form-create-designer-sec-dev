@@ -16,7 +16,8 @@ export default {
             field: uniqueId(),
             title: label,
             info: '',
-            props: {}
+            props: {},
+            dataTypes: ['string']
         };
     },
     props() {

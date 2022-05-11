@@ -15,7 +15,8 @@ export default {
             type: name,
             field: uniqueId(),
             title: label,
-            props: {}
+            props: {},
+            dataTypes: ['number']
         };
     },
     props() {

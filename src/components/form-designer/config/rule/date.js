@@ -18,6 +18,7 @@ export default {
             title: label,
             info: '',
             props: {},
+            dataTypes: ['datetime']
         };
     },
     props() {

@@ -11,7 +11,8 @@
           {
             "type": "test-component",
             "field": "f4c5utknipjr",
-            "title": "Test"
+            "title": "Test",
+            "dataTypes": ["string"]
           }
         ]
       },
@@ -29,7 +30,8 @@
             "uniqueKey": false,
             "index": false,
             "required": false,
-            "trackChange": false
+            "trackChange": false,
+            "dataTypes": ["un"]
           }
         ]
       }
@@ -54,7 +56,8 @@
             "uniqueKey": true,
             "index": true,
             "required": true,
-            "trackChange": true
+            "trackChange": true,
+            "dataTypes": ["number"]
           }
         ]
       },
@@ -77,7 +80,8 @@
             "trackChange": true,
             "props": {
               "scale": 3
-            }
+            },
+            "dataTypes": ["number"]
           }
         ]
       }
@@ -103,9 +107,8 @@
             "index": true,
             "required": true,
             "trackChange": true,
-            "props": {
-              "enumTypeCode": "relation_type_1123"
-            }
+            "enumTypeCode": "relation_type_1123",
+            "dataTypes": ["enum"]
           }
         ]
       },
@@ -122,7 +125,8 @@
             "info": "",
             "props": {
               "type": "datetimerange"
-            }
+            },
+            "dataTypes": ["datetime"]
           }
         ]
       }
@@ -140,7 +144,8 @@
           {
             "type": "input",
             "field": "ip",
-            "title": "IP"
+            "title": "IP",
+            "dataTypes": ["un"]
           }
         ]
       },
@@ -157,7 +162,8 @@
             "value": "asset",
             "props": {
               "disabled": true
-            }
+            },
+            "dataTypes": ["un"]
           }
         ]
       }
@@ -166,6 +172,7 @@
   {
     "type": "fc-textarea",
     "field": "ha65uubr3jgz",
-    "title": "多行输入框"
+    "title": "多行输入框",
+    "dataTypes": ["string"]
   }
 ]
