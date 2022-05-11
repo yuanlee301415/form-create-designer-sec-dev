@@ -12,6 +12,7 @@ import Required from './components/Required.vue';
 import TableOptions from './components/TableOptions.vue';
 import TestComponent from './components/custom/Test'
 import Unsupported from './components/custom/Unsupported';
+import Integer from './components/custom/Integer';
 
 import {designerForm} from './utils/form';
 import {makeOptionsRule} from './utils/index';
@@ -34,6 +35,9 @@ formCreate.component('TestComponent', TestComponent)
 
 designerForm.component('FcUnsupported', Unsupported)
 formCreate.component('FcUnsupported', Unsupported)
+
+designerForm.component('FcInteger', Integer)
+formCreate.component('FcInteger', Integer)
 
 designerForm.register('_fc', {
     init(fc, rule) {

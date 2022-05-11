@@ -22,6 +22,7 @@ import button from './rule/button';
 import editor from './rule/editor';
 import test from './rule/test';
 import unsupported from './rule/unsupported';
+import integer from './rule/integer';
 
 export default function createMenu() {
     return [
@@ -31,6 +32,7 @@ export default function createMenu() {
             list: [
                 test,
                 unsupported,
+                integer,
                 input, number, radio, checkbox, select, _switch, time, date, slider, rate, color, cascader, upload, transfer, tree, editor
             ]
         },

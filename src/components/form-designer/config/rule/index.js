@@ -25,7 +25,7 @@ import button from './button';
 import editor from './editor';
 import test from './test';
 import unsupported from './unsupported';
-
+import integer from './integer';
 
 const ruleList = {
     [radio.name]: radio,
@@ -55,6 +55,7 @@ const ruleList = {
     [editor.name]: editor,
     [test.name]: test,
     [unsupported.name]: unsupported,
+    [integer.name]: integer,
 };
 
 export default ruleList;
