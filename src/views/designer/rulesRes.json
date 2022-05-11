@@ -209,5 +209,13 @@
         ]
       }
     ]
+  },
+  {
+    "type": "fc-textarea",
+    "field": "ha65uubr3jgz",
+    "title": "多行输入框",
+    "_fc_drag_tag": "fc-textarea",
+    "hidden": false,
+    "display": true
   }
 ]

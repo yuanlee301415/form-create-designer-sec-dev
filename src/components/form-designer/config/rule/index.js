@@ -26,6 +26,7 @@ import editor from './editor';
 import test from './test';
 import unsupported from './unsupported';
 import integer from './integer';
+import textarea from './textarea';
 
 const ruleList = {
     [radio.name]: radio,
@@ -56,6 +57,7 @@ const ruleList = {
     [test.name]: test,
     [unsupported.name]: unsupported,
     [integer.name]: integer,
+    [textarea.name]: textarea,
 };
 
 export default ruleList;

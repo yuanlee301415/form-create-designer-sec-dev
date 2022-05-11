@@ -13,6 +13,7 @@ import TableOptions from './components/TableOptions.vue';
 import TestComponent from './components/custom/Test'
 import Unsupported from './components/custom/Unsupported';
 import Integer from './components/custom/Integer';
+import Textarea from './components/custom/Textarea';
 
 import {designerForm} from './utils/form';
 import {makeOptionsRule} from './utils/index';
@@ -38,6 +39,9 @@ formCreate.component('FcUnsupported', Unsupported)
 
 designerForm.component('FcInteger', Integer)
 formCreate.component('FcInteger', Integer)
+
+designerForm.component('FcTextarea', Textarea)
+formCreate.component('FcTextarea', Textarea)
 
 designerForm.register('_fc', {
     init(fc, rule) {
