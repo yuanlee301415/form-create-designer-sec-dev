@@ -27,7 +27,7 @@ export default {
     },
     props() {
         return [
-            {type: 'switch', field: 'disabled', title: '是否禁用'},
+            {type: 'switch', field: 'readonly', title: '是否只读'},
 
             {type: 'input', field: 'enumTypeCode', title: '关联字典', props: { disabled: true }},
 

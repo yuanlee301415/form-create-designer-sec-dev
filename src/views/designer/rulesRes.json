@@ -265,7 +265,26 @@
             "hidden": false,
             "display": true
           }
-
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "datePicker",
+            "field": "yq45uudcbq98",
+            "title": "日期选择器",
+            "info": "",
+            "props": {
+              "type": "datetimerange"
+            },
+            "_fc_drag_tag": "datePicker",
+            "hidden": false,
+            "display": true
+          }
         ]
       }
     ]
