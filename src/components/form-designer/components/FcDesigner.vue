@@ -640,6 +640,7 @@ export default {
           dataDefaultValue: rule.dataDefaultValue,
           unit: rule.unit,
           uniqueKey: rule.uniqueKey,
+          index: rule.index,
           _control: rule._control,
         };
 

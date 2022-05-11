@@ -48,6 +48,15 @@ export default function field() {
             props: {
                 disabled: true
             }
+        },
+        {
+            type: 'switch',
+            field: 'index',
+            value: '',
+            title: '是否索引',
+            props: {
+                disabled: true
+            }
         }
     ];
 }

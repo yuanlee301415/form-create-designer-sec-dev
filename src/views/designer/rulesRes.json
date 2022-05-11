@@ -168,6 +168,9 @@
             "field": "f4c5utknipjr",
             "title": "Unsupported",
             "info": "",
+            "unit": "MB",
+            "uniqueKey": false,
+            "index": false,
             "_fc_drag_tag": "fc-unsupported",
             "hidden": false,
             "display": true
@@ -194,6 +197,7 @@
             "info": "",
             "unit": "Kg",
             "uniqueKey": true,
+            "index": true,
             "_fc_drag_tag": "fc-integer",
             "hidden": false,
             "display": true
