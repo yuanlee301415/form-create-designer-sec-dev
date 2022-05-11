@@ -20,7 +20,8 @@ import span from './rule/span';
 import space from './rule/space';
 import button from './rule/button';
 import editor from './rule/editor';
-import TestComponent from './rule/TestComponent';
+import test from './rule/test';
+import unsupported from './rule/unsupported';
 
 export default function createMenu() {
     return [
@@ -28,7 +29,8 @@ export default function createMenu() {
             name: 'main',
             title: '表单组件',
             list: [
-                TestComponent,
+                test,
+                unsupported,
                 input, number, radio, checkbox, select, _switch, time, date, slider, rate, color, cascader, upload, transfer, tree, editor
             ]
         },

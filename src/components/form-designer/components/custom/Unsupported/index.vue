@@ -1,12 +1,16 @@
+<!--
+不支持的数据类型
+-->
+
 <template>
-  <div>
-    <el-input v-model="value" type="text" @input="value=value.replace(/\D/g, '')"/>
+  <div style="color: #ccc;">
+    不支持的数据类型
   </div>
 </template>
 
 <script>
 export default {
-  name: "TestComponent",
+  name: "Unsupported",
   data() {
     return {
       value: ''

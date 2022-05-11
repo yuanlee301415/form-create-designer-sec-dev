@@ -24,6 +24,7 @@ import tab from './tab';
 import button from './button';
 import editor from './editor';
 import test from './test';
+import unsupported from './unsupported';
 
 
 const ruleList = {
@@ -53,6 +54,7 @@ const ruleList = {
     [button.name]: button,
     [editor.name]: editor,
     [test.name]: test,
+    [unsupported.name]: unsupported,
 };
 
 export default ruleList;

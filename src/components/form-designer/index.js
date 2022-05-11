@@ -1,3 +1,4 @@
+import draggable from 'vuedraggable';
 import unique from '@form-create/utils/lib/unique';
 import FcEditor from '@form-create/component-wangeditor';
 
@@ -9,14 +10,13 @@ import Validate from './components/Validate.vue';
 import DragBox from './components/DragBox.vue';
 import Required from './components/Required.vue';
 import TableOptions from './components/TableOptions.vue';
+import TestComponent from './components/custom/Test'
+import Unsupported from './components/custom/Unsupported';
+
 import {designerForm} from './utils/form';
-import draggable from 'vuedraggable';
 import {makeOptionsRule} from './utils/index';
 import formCreate from './utils/form';
 import './style/index.css';
-
-import TestComponent from './components/custom/Test'
-console.log('TestComponent:', TestComponent)
 
 designerForm.component('draggable', draggable);
 designerForm.component('DragTool', DragTool);
@@ -31,6 +31,9 @@ formCreate.component('FcEditor', FcEditor);
 
 designerForm.component('TestComponent', TestComponent)
 formCreate.component('TestComponent', TestComponent)
+
+designerForm.component('FcUnsupported', Unsupported)
+formCreate.component('FcUnsupported', Unsupported)
 
 designerForm.register('_fc', {
     init(fc, rule) {

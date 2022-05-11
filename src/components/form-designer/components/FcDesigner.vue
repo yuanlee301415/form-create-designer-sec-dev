@@ -672,6 +672,7 @@ export default {
       this.added = false;
     },
     makeRule(config, _rule) {
+      console.log('makeRule:', { config, _rule })
       const rule = _rule || config.rule();
       rule.config = {config};
       if (!rule.effect) rule.effect = {};

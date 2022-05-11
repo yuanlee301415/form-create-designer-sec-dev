@@ -141,21 +141,40 @@
     "children": [
       {
         "type": "col",
-        "poops": {
-          "span": 24
+        "props": {
+          "span": 12
         },
         "children": [
           {
             "type": "test-component",
             "field": "f4c5utknipjr",
-            "title": "TestComponent",
+            "title": "Test",
             "info": "",
             "_fc_drag_tag": "test-component",
             "hidden": false,
             "display": true
           }
         ]
+      },
+
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "fc-unsupported",
+            "field": "f4c5utknipjr",
+            "title": "Unsupported",
+            "info": "",
+            "_fc_drag_tag": "fc-unsupported",
+            "hidden": false,
+            "display": true
+          }
+        ]
       }
+
     ]
   }
 ]

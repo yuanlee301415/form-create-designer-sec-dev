@@ -9,7 +9,6 @@ const label = 'Test';
 const name = 'test-component';
 
 export default {
-    icon: 'icon-input',
     label,
     name,
     rule() {
