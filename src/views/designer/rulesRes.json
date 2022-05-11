@@ -171,6 +171,7 @@
             "unit": "MB",
             "uniqueKey": false,
             "index": false,
+            "required": false,
             "_fc_drag_tag": "fc-unsupported",
             "hidden": false,
             "display": true
@@ -198,6 +199,7 @@
             "unit": "Kg",
             "uniqueKey": true,
             "index": true,
+            "required": true,
             "_fc_drag_tag": "fc-integer",
             "hidden": false,
             "display": true

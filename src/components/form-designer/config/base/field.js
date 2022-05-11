@@ -57,6 +57,15 @@ export default function field() {
             props: {
                 disabled: true
             }
+        },
+        {
+            type: 'switch',
+            field: 'required',
+            value: '',
+            title: '是否必填',
+            props: {
+                disabled: true
+            }
         }
     ];
 }

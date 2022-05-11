@@ -641,6 +641,7 @@ export default {
           unit: rule.unit,
           uniqueKey: rule.uniqueKey,
           index: rule.index,
+          required: rule.required,
           _control: rule._control,
         };
 
