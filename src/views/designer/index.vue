@@ -13,7 +13,7 @@
 
 <script>
 import FcDesigner  from '@/components/form-designer'
-import formRules from './formRules.json'
+import formRules from './formRules2.json'
 
 export default {
   name: 'FormDesigner',

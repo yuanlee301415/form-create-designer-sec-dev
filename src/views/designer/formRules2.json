@@ -1,0 +1,468 @@
+[
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "ip",
+            "title": "IP",
+            "dataTypes": [
+              "un"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "bizType",
+            "title": "资源分类",
+            "value": "asset",
+            "props": {
+              "disabled": true
+            },
+            "dataTypes": [
+              "un"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "assetName",
+            "title": "资产名称",
+            "dataTypes": [
+              "string"
+            ],
+            "$required": true,
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "modelNumber",
+            "title": "品牌型号",
+            "dataTypes": [
+              "string"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "select",
+            "field": "manufacturer",
+            "title": "制造商",
+            "dataTypes": [
+              "enum"
+            ],
+            "enumTypeCode": "manufacturer_type"
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "serialNumber",
+            "title": "序列号",
+            "dataTypes": [
+              "string"
+            ],
+            "$required": true,
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "select",
+            "field": "supplier",
+            "title": "供应商",
+            "dataTypes": [
+              "enum"
+            ],
+            "enumTypeCode": "supplier_type"
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "datePicker",
+            "field": "productionDate",
+            "title": "生产日期",
+            "dataTypes": [
+              "datetime"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "select",
+            "field": "purchaser",
+            "title": "采购人",
+            "dataTypes": [
+              "enum"
+            ],
+            "enumTypeCode": "purchaser_type"
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "contractNumber",
+            "title": "采购合同号",
+            "dataTypes": [
+              "string"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "datePicker",
+            "field": "procurementDate",
+            "title": "采购日期",
+            "dataTypes": [
+              "datetime"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "fc-float",
+            "field": "originalCost",
+            "title": "资产原值",
+            "dataTypes": [
+              "number"
+            ],
+            "unit": "元",
+            "$required": true,
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "fc-integer",
+            "field": "operationalLife",
+            "title": "使用年限",
+            "dataTypes": [
+              "number"
+            ],
+            "unit": "月",
+            "dataDefaultValue": "120",
+            "$required": true,
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "fc-float",
+            "field": "residualRatio",
+            "title": "残值率",
+            "dataTypes": [
+              "number"
+            ],
+            "$required": true,
+            "unit": "%",
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "select",
+            "field": "department",
+            "title": "使用部门",
+            "dataTypes": [
+              "enum"
+            ],
+            "enumTypeCode": "department_type",
+            "$required": true,
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "select",
+            "field": "owner",
+            "title": "使用人",
+            "dataTypes": [
+              "enum"
+            ],
+            "enumTypeCode": "owner_type",
+            "$required": true,
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "datePicker",
+            "field": "registrationDate",
+            "title": "登记日期",
+            "dataTypes": [
+              "datetime"
+            ],
+            "$required": true,
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "select",
+            "field": "assetStatus",
+            "title": "资产状态",
+            "dataTypes": [
+              "enum"
+            ],
+            "enumTypeCode": "asset_status_type",
+            "$required": true,
+            "uniqueKey": true,
+            "index": true,
+            "required": true,
+            "trackChange": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "proprietary_1",
+            "title": "专有属性1",
+            "dataTypes": [
+              "string"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "proprietary_2",
+            "title": "专有属性2",
+            "dataTypes": [
+              "string"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "FcRow",
+    "children": [
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "proprietary_3",
+            "title": "专有属性3",
+            "dataTypes": [
+              "string"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "props": {
+          "span": 12
+        },
+        "children": [
+          {
+            "type": "input",
+            "field": "proprietary_4",
+            "title": "专有属性4",
+            "dataTypes": [
+              "string"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
