@@ -635,11 +635,9 @@ export default {
           enumTypeCode: rule.enumTypeCode,
           _control: rule._control,
         };
-
         this.validateForm.options.formData = {validate: rule.validate ? [...rule.validate] : []};
       }
       console.log('toolActive>this.propsForm.options:', this.propsForm.options)
-
       console.log('toolActive>baseForm:', this.baseForm)
       console.log('toolActive>propsForm:', this.propsForm)
     },
@@ -706,29 +704,6 @@ export default {
           },
           inject: true,
           on: {
-            delete: ({self}) => {
-              const parent = this.getParent(self).parent;
-              parent.__fc__.rm();
-              this.$emit('delete', parent);
-              this.clearActiveRule();
-            },
-            add: ({self}) => {
-              const top = this.getParent(self);
-              this.$emit('add', top.parent);
-              top.root.children.splice(top.root.children.indexOf(top.parent) + 1, 0, this.makeRule(top.parent.config.config));
-            },
-            addChild: ({self}) => {
-              const top = this.getParent(self);
-              const config = top.parent.config.config;
-              const item = ruleList[config.children];
-              if (!item) return;
-              (!config.drag ? top.parent : top.parent.children[0]).children[0].children.push(this.makeRule(item));
-            },
-            copy: ({self}) => {
-              const top = this.getParent(self);
-              this.$emit('copy', top.parent);
-              top.root.children.splice(top.root.children.indexOf(top.parent) + 1, 0, designerForm.copyRule(top.parent));
-            },
             active: ({self}) => {
               const top = this.getParent(self);
               this.$emit('active', top.parent);
@@ -751,27 +726,6 @@ export default {
           },
           inject: true,
           on: {
-            delete: ({self}) => {
-              this.$emit('delete', self.children[0]);
-              self.__fc__.rm();
-              this.clearActiveRule();
-            },
-            add: ({self}) => {
-              this.$emit('add', self.children[0]);
-              const top = this.getParent(self);
-              top.root.children.splice(top.root.children.indexOf(top.parent) + 1, 0, this.makeRule(self.children[0].config.config));
-            },
-            addChild: ({self}) => {
-              const config = self.children[0].config.config;
-              const item = ruleList[config.children];
-              if (!item) return;
-              (!config.drag ? self : self.children[0]).children[0].children.push(this.makeRule(item));
-            },
-            copy: ({self}) => {
-              this.$emit('copy', self.children[0]);
-              const top = this.getParent(self);
-              top.root.children.splice(top.root.children.indexOf(top.parent) + 1, 0, designerForm.copyRule(top.parent));
-            },
             active: ({self}) => {
               this.$emit('active', self.children[0]);
               this.toolActive(self.children[0]);
